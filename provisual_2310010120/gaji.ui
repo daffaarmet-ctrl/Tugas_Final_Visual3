@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>747</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>40</y>
+     <width>481</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>KELOLA DATA GAJI</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>110</y>
+     <width>481</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="iDPanenLabel">
+      <property name="text">
+       <string>ID Panen</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="editID"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="namaKaryawanLabel">
+      <property name="text">
+       <string>Nama Karyawan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="cmbKaryawan"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="tanggalGajiLabel">
+      <property name="text">
+       <string>Tanggal Gaji</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QDateEdit" name="dateGaji"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="kategoriPembayaranLabel">
+      <property name="text">
+       <string>Kategori Pembayaran</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="cmbKategori">
+      <item>
+       <property name="text">
+        <string>Bulanan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mingguan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="jumlahGajiLabel">
+      <property name="text">
+       <string>Jumlah Gaji</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="editGaji">
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>290</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btnSimpan">
+      <property name="text">
+       <string>Simpan</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnUbah">
+      <property name="text">
+       <string>Ubah</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnHapus">
+      <property name="text">
+       <string>Hapus</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="tblGaji">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>390</y>
+     <width>631</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID Gaji</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nama Karyawan</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tanggal Gaji</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Kategori Pembayaran</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Jumlah Gaji</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLineEdit" name="lineCari">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>350</y>
+     <width>481</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

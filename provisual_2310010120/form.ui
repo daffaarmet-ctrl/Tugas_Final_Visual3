@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main</class>
+ <widget class="QMainWindow" name="Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuKELOLA_MENU">
+    <property name="title">
+     <string>KELOLA MENU</string>
+    </property>
+    <addaction name="actionKARYAWAN"/>
+    <addaction name="actionINVENTORY"/>
+    <addaction name="actionPANEN"/>
+    <addaction name="actionGAJI"/>
+   </widget>
+   <addaction name="menuKELOLA_MENU"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionKARYAWAN">
+   <property name="text">
+    <string>KARYAWAN</string>
+   </property>
+  </action>
+  <action name="actionINVENTORY">
+   <property name="text">
+    <string>INVENTORY</string>
+   </property>
+  </action>
+  <action name="actionPANEN">
+   <property name="text">
+    <string>PANEN</string>
+   </property>
+  </action>
+  <action name="actionGAJI">
+   <property name="text">
+    <string>GAJI</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>637</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>120</y>
+     <width>451</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="iDBarangLabel">
+      <property name="text">
+       <string>ID Barang</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="editID"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="namaBarangLabel">
+      <property name="text">
+       <string>Nama Barang</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="editNama"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="kategoriLabel">
+      <property name="text">
+       <string>Kategori</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="cmbKategori">
+      <item>
+       <property name="text">
+        <string>Pupuk</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Peralatan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Obat</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="satuanLabel">
+      <property name="text">
+       <string>Satuan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="cmbSatuan">
+      <item>
+       <property name="text">
+        <string>Kg</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pcs</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Botol</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="jumlahLabel">
+      <property name="text">
+       <string>Jumlah</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QSpinBox" name="sbJum"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>320</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btnSimpan">
+      <property name="text">
+       <string>Simpan</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnUbah">
+      <property name="text">
+       <string>Ubah</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnHapus">
+      <property name="text">
+       <string>Hapus</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="tblInventory">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>430</y>
+     <width>501</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID Barang</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nama</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Kategori</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Jumlah</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLineEdit" name="lineCari">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>390</y>
+     <width>461</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>60</y>
+     <width>451</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>KELOLA DATA INVENTORY</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

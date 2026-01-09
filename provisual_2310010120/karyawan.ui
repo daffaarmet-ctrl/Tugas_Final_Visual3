@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>633</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>50</y>
+     <width>461</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>KELOLA DATA KARYAWAN</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>110</y>
+     <width>461</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="iDKaryawanLabel">
+      <property name="text">
+       <string>ID Karyawan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="editID"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="namaKaryawanLabel">
+      <property name="text">
+       <string>Nama Karyawan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="editNama"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="alamatLabel">
+      <property name="text">
+       <string>Alamat</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="editAlamat"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="umurLabel">
+      <property name="text">
+       <string>Umur</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="sbUmur"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="noTelpLabel">
+      <property name="text">
+       <string>No Telp</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="editTelp"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="lineCari">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>350</y>
+     <width>451</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>300</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btnSimpan">
+      <property name="text">
+       <string>Simpan</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnUbah">
+      <property name="text">
+       <string>Ubah</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnHapus">
+      <property name="text">
+       <string>Hapus</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="tblKaryawan">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>390</y>
+     <width>501</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID Karyawan</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nama</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Alamat</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Umur</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>No Telp</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
